@@ -80,12 +80,13 @@ a{
 .login a{
 color:white;
 }
-.navbar{
+header  .navbar{
     padding:0;
 }
-.navbar-brand{
+header .navbar-brand{
     padding: 25px 0;
     margin: 0 40px;
+    height: auto;
 }
 .mainMenu{
     background-color: white;
@@ -95,7 +96,7 @@ color:white;
     padding-right:0 !important;
     padding-left: 0 !important;
 }
-.nav-link{
+header .nav-link{
     font-weight: 400;
     line-height: 90px;
     color: #555;
@@ -103,12 +104,12 @@ color:white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
-.nav-item:hover{
+header .nav-item:hover{
     border-bottom: 5px solid #008f53;
     margin-bottom: -5px;
     margin-top: -5px;
 }
-.nav-item:hover .nav-link{
+header .nav-item:hover .nav-link{
     color:#008f53 !important;
 }
 .login li a:hover {
@@ -170,6 +171,7 @@ margin-right: 6px;
 .loginContect{
     background-color: #FCFCFC;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 .loginBox{
     background: #ffffff;
@@ -215,7 +217,7 @@ margin-right: 6px;
 .loginBox .form-group{
     margin: 5px 0;
     position: relative;
-    margin-bottom:15px;
+    margin-bottom:25px;
 }
 .loginBox .form-control:focus{
     border-bottom: 1px solid #008f53;
@@ -234,17 +236,19 @@ border-bottom:  1px solid  #e6594d;;
     text-decoration: none !important;
 }
 
-.checkboxLabel{
+
+.remText{
     color: #919191;
     font-family: Poppins, sans-serif, 'Trebuchet MS';
     font-size: 16px;
     cursor: pointer;
-    margin: 0px !important;
     line-height: 28px;
- position: relative;
-    margin-right:15px;
+    margin-left:30px;
 }
-.checmark:before{
+.checmark{
+ 
+}
+.checmark{
     content: "";
     box-sizing: border-box;
     transition: 240ms;
@@ -257,13 +261,17 @@ border-bottom:  1px solid  #e6594d;;
     border-radius: 2px;
     margin-right:15px;
 }
+.checkboxLabel{
+    position: relative;
+    margin-right:10px;
+}
 .checmark:after{
     box-sizing: border-box;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
-    left: 6.67px;
-    top: 2.22px;
+    left: 4.67px;
+    top: 0.22px;
     display: table;
     width: 6.67px;
     height: 13.33px;
@@ -272,18 +280,258 @@ border-bottom:  1px solid  #e6594d;;
     border-left: 0;
     content: "";
 }
-#remeber{
+#remeber,#Terms{
     position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-#remeber:checked ~.checmark:before  {
+#remeber:checked ~.checmark ,#Terms:checked ~.checmark {
     background-color: #008f53;
     border-color:transparent;
 
 }
-#remeber:checked ~ .checmark:after{
+#remeber:checked ~ .checmark:after,#Terms:checked ~ .checmark:after{
     padding-top: 10px;
+}
+.forgetPass{
+    margin-right:20px;
+}
+.forgetPass a{
+    color: #008f53 !important;
+    font-size:16px;
+    text-transform: capitalize;
+}
+.formBtn{
+    margin: auto;
+margin-top:20px;
+width: 350px;
+min-height: 45px;
+font-size: 18px;
+font-weight: bold;
+padding: 0 10px;
+display: block;
+background-color: transparent;
+border:2px solid #008f53;
+border-radius: 7px;
+color:#d69942;
+transition: .5s;
+}
+.formBtn:hover{
+    background-color: #008f53;
+    color:white;
+    transition: .5s;
+}
+.haventacccount{
+    margin:15px 0;
+    color: #919191;
+    font-size: 16px;;
+}
+.haventacccount a{
+    color: #008f53 !important;
+}
+.SignUpForm .form-control{
+    background-color: #ffffff ;
+    border: 1px solid #c7c7c7;
+    border-color: #c7c7c7;
+    border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    -o-border-radius: 3px !important;
+    color: #242424;
+    font-family: Poppins, sans-serif, 'Trebuchet MS';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    height: 33px;
+}
+.SignUpForm .inputLabel{
+    position: relative;
+}
+.SignUpForm .form-control:focus{
+    border-bottom: 0 ;
+    border:1px solid #008f53 !important;
+    background:none;
+}
+.StrengthPassword{
+    display: inline-block;
+    max-width: 150px;
+    float: right;
+    padding: 6px 0 2px;
+    margin: auto;
+}
+.stringthList{
+    display: inline-block;
+    float: right;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: 100%;
+    margin: 4px 0!important;
+    text-align: right;
+}
+.stringthList li:first-child{
+    border-width: 1px;
+}
+.stringthList li{
+    display: inline-block;
+    float: left;
+    width: 20%;
+    max-height: 30px;
+    border: 1px solid #FFF;
+    border-width: 1px 1px 1px 0;
+    padding: 4px;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+.StrengthTxt{
+    color: #919191;
+
+}
+.loginForm h3{
+    color: #919191;
+    font-family: Poppins, sans-serif, 'Trebuchet MS';
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.lospassbtn{
+    margin-top:70px;
+}
+.pageCover{
+    background-image: url("../images/background.jpg");
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.pageTitle{
+    font-size: 80px;
+    line-height: 95px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+.reconPage{
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+#rootwizard h2{
+    margin:20px 0;
+    font-size: 24px;
+}
+#rootwizard .progress-bar{
+    background-color: #ca9e67;
+}
+#rootwizard .progress{
+    display: block;
+    width: 100%;
+    background-color: #ddd;
+    height: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 5px 0 0;
+}
+.formBox{
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 35px;
+    border-radius: 5px;
+}
+.halfForm{
+    width:45%;
+    display: inline-block;
+}
+.halfForm{
+    margin-right:20px;
+}
+.reconForm .form-control{
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #333;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: block;
+    float: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    height: 38px;
+    width: 100%;
+    line-height: 1.3;
+}
+.reconForm .form-control:focus{
+    border: 1px solid #999;
+    background-color: #E9F5FC;
+    box-shadow: none;
+}
+.inputname{
+    display: inline-block;
+    margin-right:10px;
+}
+.inputTitle{
+    font-size:16px;
+}
+.inputTitle span{
+color:red;
+
+}
+.inputname.inputFirstName{
+    width:30%;
+}
+.inputname.inputMidName{
+    width:20%;
+}
+.inputname.inputLastName{
+    width:30%;
+}
+
+.nameInputgroup label,.inputname.cityDetails label{
+    font-size: 13px;
+    float: none;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 4px 0 0;
+    padding: 0;
+    display:block;
+    color:#626262
+}
+.selectric .button{
+    display: none;
+}
+.reconForm .form-group{
+    margin:20px 0 ;
+}
+.inputname.cityDetails{
+    width:44%;
+    margin:10px 0;
+}
+.form-group .inputname.cityDetails:nth-child(odd){
+    margin-right:20px;
+}
+.selectric-wrapper{
+min-height: 41px;
+margin-bottom:10px;}
+.inputname.cityDetails .selectric-wrapper{
+    margin-bottom: 0;;
+
+}
+.Otherres .inputname{
+    width:22% !important;
+}
+.Otherres .selectric-wrapper{
+    margin-bottom:0;
+}
+.addOtherRes{
+    color:#008f53;
+    cursor: pointer;
 }
