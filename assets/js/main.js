@@ -8,9 +8,7 @@ jQuery(function ($) {
 		$('#rootwizard .progress-bar').css({width:$percent+'%'});
 	}});
 });
-$(".addOther").click(function(){
-  $(".form-group.Otherres").removeClass("hide");
-})
+
 });
 
 

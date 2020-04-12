@@ -449,11 +449,13 @@ transition: .5s;
 .halfForm{
     width:45%;
     display: inline-block;
+    margin-top:30px;
+    float: left;
 }
 .halfForm{
     margin-right:20px;
 }
-.reconForm .form-control{
+.reconForm .form-control,.disputeForm .form-control{
     background-color: #fff;
     box-sizing: border-box;
     border-radius: 2px;
@@ -531,7 +533,57 @@ margin-bottom:10px;}
 .Otherres .selectric-wrapper{
     margin-bottom:0;
 }
-.addOtherRes{
+.addOtherRes,.remove {
     color:#008f53;
     cursor: pointer;
+}
+.remove {
+    display: none;
+  }
+  .form-holder-append .remove {
+    display: block;
+  }
+  .btn-group-sm>.btn, .btn-sm{
+font-size:1.25rem
+  }
+  .disputeCheck label,#disputesecond,#disputefirst{
+      display: inline-block;
+  }
+  #disputesecond,#disputefirst{
+      float: left;
+      width:5%;
+  }
+  .disputeCheck label{
+      width:94%;
+      float:right;
+  }
+  .disputeCheck {
+      margin-top:20px;
+  }
+  .disputeForm label{
+      font-weight: 400;
+    
+  }
+  .disputeForm .selectric-wrapper{
+      display: inline-block;
+  }
+
+  .chzn-container .chzn-drop{
+      text-align: left;
+  }
+  .reconBody{
+      overflow-x: hidden;
+  }
+  .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+
+    background: url("chosen-sprite.png") right top no-repeat !important;  
+}
+@media(min-width:320px)and (max-width:767px){
+    .halfForm{
+        width:100% !important;
+        margin:0 !important
+    }
+    .container{
+    width:90%;
+    }
 }
