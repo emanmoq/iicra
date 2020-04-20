@@ -619,6 +619,12 @@ font-size:1.25rem
     margin-bottom:5px;
     line-height: 50px;;
 }
+.emailtitle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #0c7cd5 !important;
+    font-size: 26px !important;
+}
 @media(min-width:320px)and (max-width:767px){
     .halfForm{
         width:100% !important;
