@@ -634,6 +634,8 @@ font-size:1.25rem
 }
 .profileHeaderCon{
     margin-top:50px;
+    position: relative;
+    z-index: 0;
 }
 .avatarImg{
     margin:0 auto;
@@ -641,7 +643,39 @@ font-size:1.25rem
     height:160px;
     border-radius: 50%;
     border:3px solid #0c7cd5;
+    overflow: hidden;
+    background-color:#f1b136;
+    display: block;
 }
+.uploadCover{
+    position: absolute;
+    z-index: -1;
+    border-bottom: 3px solid #0c7cd5;
+    top: 0;
+    left: 0;
+    height: 130px;
+    width: 100%;
+    display: block;
+}
+.viewProfileDetails{
+    margin-top:20px;
+    text-align: left !important;
+}
+.profileData {
+    width:100%;
+}
+.profileData td{
+    padding:20px 10px;
+    color:#616175 ; 
+}
+.profileData tr{
+  
+    border-bottom:1px solid #cad0d5;
+}
+.profileData tr td:first-child{
+    text-align: right;
+}
+
 @media(min-width:320px)and (max-width:767px){
     .halfForm{
         width:100% !important;
