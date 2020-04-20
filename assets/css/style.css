@@ -632,6 +632,16 @@ font-size:1.25rem
     text-align: center;
     display: block;
 }
+.profileHeaderCon{
+    margin-top:50px;
+}
+.avatarImg{
+    margin:0 auto;
+    width:160px;
+    height:160px;
+    border-radius: 50%;
+    border:3px solid #0c7cd5;
+}
 @media(min-width:320px)and (max-width:767px){
     .halfForm{
         width:100% !important;
