@@ -225,6 +225,9 @@ margin-right: 6px;
 .error{
 border-bottom:  1px solid  #e6594d;;
 }
+.inputError{
+    border:1px solid #e6594d
+}
 .loginBox .message{
     color: #e6594d;
     background: #ffffff;
@@ -245,9 +248,7 @@ border-bottom:  1px solid  #e6594d;;
     line-height: 28px;
     margin-left:30px;
 }
-.checmark{
- 
-}
+
 .checmark{
     content: "";
     box-sizing: border-box;
@@ -583,6 +584,40 @@ font-size:1.25rem
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     padding: 35px;
     border-radius: 5px;
+}
+.pager li>a, .pager li>span{
+    color:#ca9e67;
+    border:1px solid #ca9e67;
+}
+.pager li>a:hover, .pager li>a:focus{
+    background-color: #ca9e67;
+    color:white;
+}
+.infoTitle{
+
+}
+.fileuploadBox{
+    border:2px dashed #c7c7c7;
+    padding: 10px ;
+    text-align: center;
+    width:100%;
+    font-size:14px;
+    line-height: 30px;
+    color:#aca7a7;
+}
+.fileuploadinput{
+    position: absolute;
+    opacity: 0;
+}
+.form-group h4{
+    color: #919191;
+    font-family: Poppins, sans-serif, 'Trebuchet MS';
+    font-size: 16px;
+}
+.inputCont{
+    width:100%;
+    margin-bottom:5px;
+    line-height: 50px;;
 }
 @media(min-width:320px)and (max-width:767px){
     .halfForm{
