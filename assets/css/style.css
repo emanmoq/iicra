@@ -611,7 +611,6 @@ font-size:1.25rem
 }
 .form-group h4{
     color: #919191;
-    font-family: Poppins, sans-serif, 'Trebuchet MS';
     font-size: 16px;
 }
 .inputCont{
@@ -622,8 +621,16 @@ font-size:1.25rem
 .emailtitle{
     margin-top: 30px;
     margin-bottom: 20px;
-    color: #0c7cd5 !important;
-    font-size: 26px !important;
+    color: #0c7cd5 ;
+    font-size: 26px ;
+    display: block;
+}
+.memberSince{
+    color: #575d70;
+    font-size: 16px;
+    font-weight: 500px;
+    text-align: center;
+    display: block;
 }
 @media(min-width:320px)and (max-width:767px){
     .halfForm{
